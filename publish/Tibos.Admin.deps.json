@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "ff9c19f07fd5eb368f52744ffe65d50ee287347c"
+    "signature": "4d7b8d0d5f3d530751f1778fe21c55c2b5969cbe"
   },
   "compilationOptions": {
     "defines": [
@@ -28,6 +28,8 @@
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.NETCore.App": "2.1.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.9",
+          "NLog": "4.6.4",
+          "NLog.Web.AspNetCore": "4.8.2",
           "Tibos.Common": "1.0.0",
           "Tibos.Confing": "1.0.0",
           "Tibos.ConfingModel": "1.0.0",
@@ -442,44 +444,43 @@
           "lib/netcoreapp2.1/MySqlConnector.dll": {}
         }
       },
-      "NLog/4.5.2": {
+      "NLog/4.6.4": {
         "runtime": {
           "lib/netstandard2.0/NLog.dll": {
             "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.5.2.7435"
+            "fileVersion": "4.6.4.10085"
           }
         },
         "compile": {
           "lib/netstandard2.0/NLog.dll": {}
         }
       },
-      "NLog.Extensions.Logging/1.0.1": {
+      "NLog.Extensions.Logging/1.5.0": {
         "dependencies": {
           "Microsoft.Extensions.Logging": "2.1.1",
-          "NLog": "4.5.2"
+          "NLog": "4.6.4"
         },
         "runtime": {
           "lib/netstandard2.0/NLog.Extensions.Logging.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.1.558"
+            "fileVersion": "1.5.0.960"
           }
         },
         "compile": {
           "lib/netstandard2.0/NLog.Extensions.Logging.dll": {}
         }
       },
-      "NLog.Web.AspNetCore/4.5.2": {
+      "NLog.Web.AspNetCore/4.8.2": {
         "dependencies": {
           "Microsoft.AspNetCore.Hosting.Abstractions": "2.1.1",
           "Microsoft.AspNetCore.Http": "2.1.1",
-          "Microsoft.AspNetCore.Http.Extensions": "2.1.1",
           "Microsoft.AspNetCore.Routing.Abstractions": "2.1.1",
-          "NLog.Extensions.Logging": "1.0.1"
+          "NLog.Extensions.Logging": "1.5.0"
         },
         "runtime": {
           "lib/netstandard2.0/NLog.Web.AspNetCore.dll": {
             "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.5.2.811"
+            "fileVersion": "4.8.2.1211"
           }
         },
         "compile": {
@@ -865,7 +866,7 @@
       "Tibos.Common/1.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Caching.Memory": "2.1.1",
-          "NLog.Web.AspNetCore": "4.5.2",
+          "NLog.Web.AspNetCore": "4.8.2",
           "ZKWeb.System.Drawing": "4.0.1"
         },
         "runtime": {
@@ -4187,26 +4188,26 @@
       "path": "mysqlconnector/0.44.1",
       "hashPath": "mysqlconnector.0.44.1.nupkg.sha512"
     },
-    "NLog/4.5.2": {
+    "NLog/4.6.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Eqh33rMTaCTLefc++7ClUXn1o+7fc41HKWw1CxdeUbLnDz3ZgZp0jkRUVTaMKldyM/8j0jAv8+7+0DSKRjagIQ==",
-      "path": "nlog/4.5.2",
-      "hashPath": "nlog.4.5.2.nupkg.sha512"
+      "sha512": "sha512-aC4Hrp2g5fzrIl3aWGa/nBWZxlk/QUQLA8vfOLR6FdwgVhyQ8EOgSrq5ssKjEFb3qogx9m66v0pZPT1AaqBarQ==",
+      "path": "nlog/4.6.4",
+      "hashPath": "nlog.4.6.4.nupkg.sha512"
     },
-    "NLog.Extensions.Logging/1.0.1": {
+    "NLog.Extensions.Logging/1.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-WSQgD17CEzx/+5LaG2yV8lhFWbPKJ8BYeTVTr6cgFj+7V1JICFGiYFfh/JEHOB3j43NA4XO4PUV18iVXqc5L+A==",
-      "path": "nlog.extensions.logging/1.0.1",
-      "hashPath": "nlog.extensions.logging.1.0.1.nupkg.sha512"
+      "sha512": "sha512-E3knGebvY3EtY9RRaqi9673ox6ivEa/BqsHmpvSWPirJckSRQJcPQrRPpzIfI4h9OcILque9YXt0JPhJuArB+g==",
+      "path": "nlog.extensions.logging/1.5.0",
+      "hashPath": "nlog.extensions.logging.1.5.0.nupkg.sha512"
     },
-    "NLog.Web.AspNetCore/4.5.2": {
+    "NLog.Web.AspNetCore/4.8.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-OoSA4fj3DODRj0d+btRhyNDnlCAD5a1eh6HxQ5KEimjO9NDoBXu+NXl3OTF9Qxe0Ya/cVSuYNEW7hPgITgMlpw==",
-      "path": "nlog.web.aspnetcore/4.5.2",
-      "hashPath": "nlog.web.aspnetcore.4.5.2.nupkg.sha512"
+      "sha512": "sha512-XgCCtz5tAB4quAqyDqlrG40qp7dnkIDACeQQ8oDrNxZimCvqkeo61oOZo/2S+oOR9ypD0w9fzrfc8cEJL9/x9w==",
+      "path": "nlog.web.aspnetcore/4.8.2",
+      "hashPath": "nlog.web.aspnetcore.4.8.2.nupkg.sha512"
     },
     "NuGet.Frameworks/4.7.0": {
       "type": "package",
